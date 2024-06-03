@@ -143,6 +143,12 @@ ul {
   line-height: 20px;
   color: #000000 !important;
 }
+.nav-item .nav-link.AR {
+  color: #ffffff !important;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: var(--main-color) !important;
+}
 .nav-item .nav-link:hover {
   color: var(--second-color) !important;
 }
@@ -228,7 +234,11 @@ ul {
   .nav-item:hover {
     padding: 7px;
     border-radius: 5px;
-    background: var(--main-color);
+    /* background: var(--main-color); */
+  }
+  .nav-item .nav-link.AR {
+    width: fit-content;
+    padding: 5px;
   }
 }
 
@@ -392,12 +402,28 @@ ul {
 }
 /* End Articles */
 
-/* Start Testimonials */
+/* Start swiper-Testimonials */
+.swiper-about-us {
+  background-color: var(--second-color);
+}
+
+.swiper-about-us
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: var(--main-color);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  height: 10px;
+  width: 18px;
+  border-radius: 20px;
+}
+
 .testimonials {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
-  position: relative;
-  background-color: var(--section-background);
 }
 .testimonials .container {
   display: grid;
@@ -438,7 +464,7 @@ ul {
   margin-top: 10px;
   margin-bottom: 0;
 }
-/* End Testimonials */
+/* End swiper-Testimonials */
 /* Start Team */
 .team {
   padding-top: var(--main-padding-top);
@@ -614,65 +640,6 @@ ul {
 }
 /* End Services */
 
-/* Start Videos */
-.videos {
-  padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
-}
-.videos .holder {
-  display: flex;
-  justify-content: center;
-  background-color: var(--section-background);
-  border: 1px solid #ddd;
-}
-@media (max-width: 991px) {
-  .videos .holder {
-    flex-direction: column;
-  }
-}
-.videos .holder .list {
-  min-width: 300px;
-  background-color: white;
-}
-.videos .holder .list .name {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #f4f4f4;
-  font-weight: bold;
-  /* color: var(--main-color);*/
-}
-.videos .holder .list ul li {
-  padding: 20px;
-  border-top: 1px solid var(--section-background);
-  cursor: pointer;
-  transition: var(--main-transition);
-}
-.videos .holder .list ul li:hover {
-  background-color: #fafafa;
-  color: var(--main-color);
-}
-.videos .holder .list ul li span {
-  display: block;
-  margin-top: 10px;
-  color: #777;
-}
-.videos .holder .preview {
-  background-color: #e2e2e2;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.videos .holder .preview img {
-  max-width: 100%;
-}
-.videos .holder .preview .info {
-  padding: 20px;
-  background-color: white;
-  margin-top: 10px;
-}
-/* End Videos */
 /* Start Stats */
 .stats {
   padding-top: var(--main-padding-top);
@@ -1036,3 +1003,110 @@ ul {
   }
 }
 /* End Animation */
+/***************************************************************/
+/***************************************************************/
+/********************** Start page About-Us ********************/
+/***************************************************************/
+/***************************************************************/
+
+/* Start About-Us (2) */
+.about-us-text {
+  padding: 80px 0;
+  text-align: center;
+  justify-content: center;
+  background: var(--main-color);
+}
+
+.about-us-text h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: var(--second-color);
+}
+
+.about-us-text p a {
+  font-weight: bold;
+  color: #ffffff;
+}
+.about-us-text p a:hover {
+  color: var(--second-color);
+}
+
+.about-us-text p span {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 900;
+  color: var(--second-color);
+}
+/* End About-Us (2) */
+
+/* Start Story About Us ( 3 ) */
+.all_Story_aboutUs {
+  padding: 20px;
+  background: #ececec;
+  padding-bottom: var(--main-padding-bottom);
+}
+
+.story-about {
+  text-align: start;
+}
+
+.story-about h1 {
+  padding-top: 50px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.story-about h3 {
+  color: var(--second-color);
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.story-about h6 {
+  color: #3a3a3a;
+  padding-top: 10px;
+  font-size: 16px;
+  width: 450px;
+}
+
+.about_img {
+  margin: 50px;
+  width: 80%;
+  height: 80%;
+  border-radius: 7px;
+  box-shadow: 0px 1px 3px 0px gray;
+}
+
+@media (max-width: 995px) {
+  .about_img {
+    margin: 50px 0;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .story-about h1 {
+    width: 100%;
+  }
+  .story-about h6 {
+    width: 100%;
+  }
+  .story-about p {
+    width: 100%;
+  }
+  .about_img {
+    margin: 20px 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+/* End Story About Us ( 3 ) */
+
+/***************************************************************/
+/***************************************************************/
+/********************** End page About-Us ********************/
+/***************************************************************/
+/***************************************************************/
