@@ -712,94 +712,144 @@ ul {
 /* Start Discount */
 
 /* Start Contact Us 6 */
-.contact {
-  min-height: 600px;
-  background-image: url("../imgs/contact.png");
+.all-contact-us {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  position: relative;
-}
-.contact .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-.contact .container {
-  position: relative;
-  z-index: 2;
+  height: calc(100vh + 100px);
+  background-image: url("../imgs/contact.png");
 }
 
-.contact form {
-  overflow: hidden;
-  max-width: 800px;
+.all-contact-us h3 {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px 20px 10px;
+}
+.all-contact-us p {
+  font-weight: bold;
+  padding: 0;
+}
+
+.all-contact-us .contact-us {
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  top: 10%;
+  justify-content: center;
   margin: auto;
+  width: 60%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px #000;
 }
-.contact form .left {
-  float: left;
-  width: 49%;
+
+.all-contact-us .contact-us .input-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
 }
-.contact form .right {
-  float: right;
-  width: 49%;
+
+.all-contact-us .contact-us .input-group input {
+  margin: 10px;
+  padding: 10px 15px;
+  width: 45%;
+  outline: none;
+  border: #999995 solid 1px;
+  border-radius: 17px !important;
+  box-shadow: 1px 1px 3px rgb(166, 189, 193);
 }
-@media (max-width: 767px) {
-  .contact form .left,
-  .contact form .right {
-    float: none;
-    width: 100%;
+
+.all-contact-us .contact-us textarea {
+  margin: 10px;
+  padding: 20px;
+  height: 150px;
+  width: 98%;
+  outline: none;
+  border: #999995 solid 1px;
+  border-radius: 50px !important;
+  box-shadow: 1px 1px 3px rgb(166, 189, 193);
+}
+
+.all-contact-us .contact-us .button-submit {
+  text-align: center;
+}
+
+.all-contact-us .contact-us .button-submit .submit {
+  padding: 10px 50px;
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: var(--main-color);
+  border: var(--main-color) solid 1px;
+  transition: var(--main-transition);
+}
+.all-contact-us .contact-us .button-submit .submit:hover {
+  transform: translate(0.03s);
+  color: var(--main-color);
+  background-color: var(--second-color);
+  border: var(--second-color) solid 1px;
+}
+
+@media (max-width: 950px) {
+  .all-contact-us .contact-us {
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    top: 10%;
+    width: 80%;
   }
 }
-.contact form input:not([type="submit"]),
-.contact form textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  background-color: rgba(218, 218, 218, 0.19);
+
+@media (max-width: 750px) {
+  .all-contact-us {
+    height: calc(100vh + 200px);
+  }
+  .all-contact-us .contact-us {
+    left: 5%;
+    top: 10%;
+    width: 90%;
+  }
+  .all-contact-us .contact-us input {
+    margin: 5px auto !important;
+    padding: 10px;
+    width: 100% !important;
+  }
 }
-.contact form input:not([type="submit"]):focus,
-.contact form textarea:focus {
-  outline: 1px solid var(--main-color);
-}
-.contact form input {
-  height: 40px;
-}
-.contact form textarea {
-  height: 150px;
-}
-.contact form input[type="submit"] {
-  padding: 10px;
-  width: 100%;
-  border-color: transparent;
-  background-color: var(--main-color);
-  color: #fff;
-  cursor: pointer;
-}
-.contact form textarea:focus::-webkit-input-placeholder,
-.contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: 0.3s;
-}
-.contact form textarea:focus:-ms-input-placeholder,
-.contact form input:not([type="submit"]):focus:-ms-input-placeholder {
-  opacity: 0;
-  transition: 0.3s;
-}
-.contact form textarea:focus::placeholder,
-.contact form input:not([type="submit"]):focus::placeholder {
-  opacity: 0;
-  transition: 0.3s;
+
+@media (max-width: 450px) {
+  .all-contact-us {
+    height: calc(100vh) !important;
+  }
+
+  .all-contact-us .contact-us input {
+    margin: 5px auto !important;
+    padding: 10px;
+    width: 100% !important;
+  }
+
+  .all-contact-us .contact-us textarea {
+    margin: 5px auto;
+    padding: 12px;
+    width: 100%;
+    height: 100px;
+    border-radius: 25px !important;
+  }
+
+  .all-contact-us .contact-us .submit {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 22px;
+  }
 }
 /* End Contact Us 6 */
 
-/* End Discount */
 /* Start Footer */
-
 .footer {
   padding: 0;
   background-color: var(--main-color);
@@ -1107,6 +1157,71 @@ ul {
 
 /***************************************************************/
 /***************************************************************/
-/********************** End page About-Us ********************/
+/********************** End page About-Us **********************/
+/***************************************************************/
+/***************************************************************/
+
+/***************************************************************/
+/***************************************************************/
+/********************* Start page Contact Us *******************/
+/***************************************************************/
+/***************************************************************/
+.contact_boxs {
+  padding-bottom: 1200px;
+  text-align: center;
+  justify-content: center;
+  background-color: #fffdf2;
+}
+
+.contact_boxs .container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact_boxs .box {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px;
+  border: #deedde solid 1px;
+  box-shadow: 1px 1px 1px #deedde;
+}
+
+.contact_boxs .box {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px;
+  border: #deedde solid 1px;
+  box-shadow: 1px 1px 5px var(--main-color);
+  transition: var(--main-transition);
+}
+.contact_boxs .box:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+.contact_boxs .box .icon {
+  font-size: 22px;
+  color: var(--second-color);
+  padding: 5px 0 10px;
+}
+.contact_boxs .box .content h3 {
+  padding: 5px;
+  font-size: 19px;
+  color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .contact_boxs .box {
+    width: 70% !important;
+  }
+}
+/***************************************************************/
+/***************************************************************/
+/********************** End page Contact Us ********************/
 /***************************************************************/
 /***************************************************************/

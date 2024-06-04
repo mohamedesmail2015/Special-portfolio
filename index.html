@@ -93,7 +93,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Progects <i class="fa-solid fa-chevron-down"></i>
+                    Pages <i class="fa-solid fa-chevron-down"></i>
                   </a>
                   <ul class="dropdown-menu">
                     <div class="d-flex">
@@ -104,8 +104,8 @@
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="support_request.html"
-                            >support_reques</a
+                          <a class="dropdown-item" href="contact-us.html"
+                            >Contact Us</a
                           >
                         </li>
                         <li>
@@ -119,9 +119,6 @@
                 <li class="nav-item">
                   <a class="nav-link AR" href="#Testimonials">AR</a>
                 </li>
-
-
-
               </ul>
 
               <a class="navbar-brand" href="index.html">
@@ -643,22 +640,26 @@
     <!-- End Stats -->
 
     <!-- Start Contact Us -->
-    <div class="contact">
-      <div class="overlay"></div>
-      <h2 class="main-title">Contact Us</h2>
-      <div class="container">
-        <form action="">
-          <div class="left">
-            <input type="text" placeholder="Your Name" name="username" />
-            <input type="text" placeholder="Your Phone" name="phone" />
-            <input type="email" placeholder="Your Email" name="email" />
-            <input type="text" placeholder="Subject" name="subject" />
-          </div>
-          <div class="right">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send" />
-          </div>
-        </form>
+    <div class="all-contact-us">
+      <div class="contact-us p-3">
+        <h3>Get In Touch</h3>
+        <p>Feel free to reach out with any questions or comments below.</p>
+        <div class="input-group mb-3">
+          <input type="text" placeholder="Farst name*" />
+          <input type="text" placeholder="Last name*" />
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="number" placeholder="Phone*" />
+          <input type="email" placeholder="Email*" />
+        </div>
+
+        <div class="form-floating">
+          <textarea placeholder="The Message*" id="floatingTextarea"></textarea>
+        </div>
+        <div class="button-submit">
+          <button type="submit" class="submit">Submit</button>
+        </div>
       </div>
     </div>
     <!-- End Contact Us -->
