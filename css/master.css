@@ -933,8 +933,8 @@ ul {
   display: block;
 }
 .footer .logo {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin-top: 20px;
   border-radius: 50%;
   border: 1px solid #000 !important;
@@ -1225,3 +1225,127 @@ ul {
 /********************** End page Contact Us ********************/
 /***************************************************************/
 /***************************************************************/
+
+/***********************************************************/
+/********************* END Request PAGE ********************/
+/***********************************************************/
+/* Start FAQ 2  */
+
+.faq_text {
+  padding: 70px 0 20px;
+}
+
+.faq_text h2 {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.faq_text p {
+  width: 80%;
+  color: var(--second-color);
+  line-height: 24px;
+}
+.faq_text img {
+  margin-top: 10px;
+  height: 300px;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid var(--main-color);
+}
+
+.faq_accordion {
+  text-align: start;
+  overflow: hidden;
+  margin: auto;
+  margin: 10px;
+  padding: 50px 0 20px;
+}
+
+.all_accordion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all_accordion .accordion .contentBx {
+  border: 1.5px solid #ececec;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px;
+  padding: 0 5px;
+  box-shadow: 1px 1px 1px 1px var(--main-color);
+}
+.all_accordion .accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  color: var(--main-color);
+  font-family: Be Vietnam Pro;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  cursor: pointer;
+}
+.all_accordion .accordion .contentBx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.all_accordion .accordion .contentBx.active .label::before {
+  content: "-";
+  color: #1d2130;
+}
+
+.all_accordion .accordion .contentBx .content {
+  position: relative;
+  background: #ffffff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  color: var(--second-color);
+}
+
+.all_accordion .accordion .contentBx.active .content {
+  height: fit-content;
+  padding: 5px 10px;
+}
+
+@media (max-width: 991px) {
+  .faq_text {
+    padding-top: 70px;
+    text-align: center !important;
+  }
+
+  .faq_text h2,
+  .faq_text p {
+    margin: auto;
+    text-align: center !important;
+  }
+
+  .faq_text p {
+    padding-top: 20px;
+  }
+
+  .faq_accordion {
+    margin: 5px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 667px) {
+  .faq_text h2,
+  .faq_text p {
+    margin: auto;
+    text-align: center !important;
+  }
+}
+/***********************************************************/
+/*********************** END FAQ PAGE **********************/
+/***********************************************************/
